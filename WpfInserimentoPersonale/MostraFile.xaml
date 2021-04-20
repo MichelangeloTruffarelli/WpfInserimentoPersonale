@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfInserimentoPersonale"
         mc:Ignorable="d"
-        Title="MostraFile" Height="450" Width="800">
+        Title="MostraFile" Height="500" Width="800">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" MinHeight="50"/>
+                    <RowDefinition Height="*" MinHeight="20"/>
+                    <RowDefinition Height="*" MinHeight="200"/>
+                    <RowDefinition Height="*" MinHeight="40"/>
+                    <RowDefinition Height="*" MinHeight="40"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+                    <Label Content="PERSONALE AZIENDALE" Foreground="Red" FontSize="30" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+                    <ListBox x:Name="lbMostra" FontSize="18" Height="215" Width="500" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                </StackPanel>
+
+                <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
+                    <Button x:Name="btnEsci" Content="ESCI" FontSize="22" Width="200" HorizontalAlignment="Center"/>
+                </StackPanel>
+
+            </Grid>
+        </StackPanel>
     </Grid>
 </Window>

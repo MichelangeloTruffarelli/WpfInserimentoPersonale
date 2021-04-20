@@ -24,5 +24,10 @@ namespace WpfInserimentoPersonale
         {
             InitializeComponent();
         }
+
+        private void cmbQualifica_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

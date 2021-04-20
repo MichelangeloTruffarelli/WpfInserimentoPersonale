@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfInserimentoPersonale"
         mc:Ignorable="d"
-        Title="MainWindow" Height="500" Width="800">
+        Title="InserimentoPersonaleAziendale" Height="500" Width="800">
     <Grid>
         <StackPanel Orientation="Vertical" VerticalAlignment="Center">
             <Grid>
@@ -14,56 +14,56 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="*" MinHeight="50"/>
-                    <RowDefinition Height="*" MinHeight="20"/>
-                    <RowDefinition Height="*" MinHeight="40"/>
-                    <RowDefinition Height="*" MinHeight="40"/>
-                    <RowDefinition Height="*" MinHeight="40"/>
-                    <RowDefinition Height="*" MinHeight="50"/>
-                    <RowDefinition Height="*" MinHeight="120"/>
-                    <RowDefinition Height="*" MinHeight="20"/>
-                    <RowDefinition Height="*" MinHeight="40"/>
-                    <RowDefinition Height="*" MinHeight="40"/>
+                    <RowDefinition Height="5*" MinHeight="50"/>
+                    <RowDefinition Height="2*" MinHeight="20"/>
+                    <RowDefinition Height="4*" MinHeight="40"/>
+                    <RowDefinition Height="4*" MinHeight="40"/>
+                    <RowDefinition Height="4*" MinHeight="40"/>
+                    <RowDefinition Height="5*" MinHeight="50"/>
+                    <RowDefinition Height="12*" MinHeight="120"/>
+                    <RowDefinition Height="2*" MinHeight="20"/>
+                    <RowDefinition Height="4*" MinHeight="40"/>
+                    <RowDefinition Height="4*" MinHeight="40"/>
                 </Grid.RowDefinitions>
 
-                <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Label Content="Inserimento Personale Aziendale" Foreground="Red" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+                <StackPanel Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="42" Margin="0,4">
+                    <Label Content="INSERIMENTO PERSONALE AZIENDALE" Foreground="Red" FontSize="24" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="2" Grid.Column="0" VerticalAlignment="Center">
-                    <Label Content="Qualifica" FontSize="18" Width="130" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Right"/>
+                <StackPanel Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Height="40">
+                    <Label Content="Qualifica" FontSize="22" Width="130" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Right"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center">
+                <StackPanel Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Height="34" Margin="0,3">
                     <ComboBox Name="cmb_Qualifica" FontSize="18" Width="170" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" SelectionChanged="cmbQualifica_SelectionChanged"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="3" Grid.Column="0" VerticalAlignment="Center">
-                    <Label Content="Area" FontSize="18" Width="130" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Right"/>
+                <StackPanel Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Height="40">
+                    <Label Content="Area" FontSize="22" Width="130" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" HorizontalAlignment="Right"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center">
+                <StackPanel Grid.Row="3" Grid.Column="1" VerticalAlignment="Center" Height="34" Margin="0,3">
                     <TextBox Name="txt_Area" FontSize="18" Width="170" Height="34" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Button x:Name="btn_Inserisci" Content="Inserisci" FontSize="18" Width="170" HorizontalAlignment="Center"/>
+                <StackPanel Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="32" Margin="0,4">
+                    <Button x:Name="btn_Inserisci" Content="INSERISCI" FontSize="22" Width="170" HorizontalAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Label Content="Riepilogo" FontSize="18" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <StackPanel Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="38" Margin="0,6">
+                    <Label Content="Riepilogo" FontSize="22" Width="130" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <ListBox x:Name="lbRiepilogo" FontSize="18" Width="530" Height="110" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
+                <StackPanel Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="110" Margin="0,5">
+                    <ListBox x:Name="lbRiepilogo" FontSize="22" Width="530" Height="110" HorizontalContentAlignment="Left" VerticalContentAlignment="Center"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Button x:Name="btn_NuovoInserimento" Content="Nuovo Inserimento" FontSize="18" Width="170" HorizontalAlignment="Center"/>
+                <StackPanel Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="32" Margin="0,4">
+                    <Button x:Name="btn_NuovoInserimento" Content="Nuovo Inserimento" FontSize="22" Width="197" HorizontalAlignment="Center" Margin="311,0,284,0"/>
                 </StackPanel>
 
-                <StackPanel Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center">
-                    <Button x:Name="btn_MostraFile" Content="Mostra File" FontSize="18" Width="170" HorizontalAlignment="Center"/>
+                <StackPanel Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" Height="32" Margin="0,4">
+                    <Button x:Name="btn_MostraFile" Content="Mostra File" FontSize="22" Width="170" HorizontalAlignment="Center" Margin="311,0"/>
                 </StackPanel>
             </Grid>
         </StackPanel>
